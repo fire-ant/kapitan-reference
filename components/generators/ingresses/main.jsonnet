@@ -1,4 +1,5 @@
-local kap = import 'lib/kap.libsonnet';
+local kap = import "lib/kapitan.libjsonnet";
+local inventory = kap.inventory();
 local utils = kap.utils;
 local p = kap.parameters;
 

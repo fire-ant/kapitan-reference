@@ -6,7 +6,6 @@ metadata:
   labels:
     name: echo-server
   name: echo-server
-  namespace: tutorial
 spec:
   replicas: 3
   selector:
@@ -99,7 +98,6 @@ metadata:
   labels:
     name: echo-server
   name: echo-server
-  namespace: tutorial
 spec:
   ports:
     - name: nginx

@@ -7,7 +7,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: catalogue-db
   name: catalogue-db
-  namespace: prod-sockshop
 spec:
   replicas: 1
   selector:
@@ -50,7 +49,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: catalogue-db
   name: catalogue-db
-  namespace: prod-sockshop
 spec:
   ports:
     - name: mysql

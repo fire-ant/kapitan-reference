@@ -6,7 +6,6 @@ metadata:
   labels:
     name: user-db
   name: user-db
-  namespace: prod-sockshop
 spec:
   replicas: 1
   selector:
@@ -54,7 +53,6 @@ metadata:
   labels:
     name: user-db
   name: user-db
-  namespace: prod-sockshop
 spec:
   ports:
     - name: mongo

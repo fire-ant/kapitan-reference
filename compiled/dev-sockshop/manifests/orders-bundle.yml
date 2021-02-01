@@ -7,7 +7,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: orders
   name: orders
-  namespace: dev-sockshop
 spec:
   replicas: 1
   selector:
@@ -85,7 +84,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: orders
   name: orders
-  namespace: dev-sockshop
 spec:
   ports:
     - name: http

@@ -14,7 +14,6 @@ metadata:
   labels:
     name: logstash-config
   name: logstash-config
-  namespace: examples
 ---
 apiVersion: v1
 data:
@@ -27,4 +26,3 @@ metadata:
   labels:
     name: logstash-pipelines
   name: logstash-pipelines
-  namespace: examples

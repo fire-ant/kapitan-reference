@@ -9,4 +9,3 @@ metadata:
   labels:
     name: pritunl
   name: pritunl
-  namespace: pritunl

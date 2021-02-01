@@ -7,7 +7,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: frontend
   name: frontend
-  namespace: dev-sockshop
 spec:
   replicas: 1
   selector:
@@ -73,7 +72,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: frontend
   name: frontend
-  namespace: dev-sockshop
 spec:
   ports:
     - name: http

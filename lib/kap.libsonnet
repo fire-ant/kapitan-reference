@@ -1,10 +1,11 @@
 /*
  * This class hides all the boilerplate needed for kapitan.
- */
+ */ 
 
 local kapitan = import 'lib/kapitan.libjsonnet';
 local kube = import 'lib/kube-platforms.libsonnet';
 local utils = import 'lib/utils.libsonnet';
+
 
 local inventory = kapitan.inventory();
 local p = inventory.parameters;

@@ -6,7 +6,6 @@ metadata:
   labels:
     name: logstash
   name: logstash
-  namespace: examples
 spec:
   replicas: 2
   selector:

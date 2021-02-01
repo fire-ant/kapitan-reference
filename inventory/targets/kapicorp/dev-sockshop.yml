@@ -2,3 +2,47 @@ classes:
   - common
   - projects.localhost.kubernetes.kind
   - applications.sock-shop
+
+parameters:
+  target_name: dev-sockshop
+  cluster:
+    kind:
+      name: kind-cluster
+      type: kind
+      id: kind-kind
+      user: kind-kind
+
+  kapitan:
+    dependencies:
+    - type: git
+      source: https://github.com/kapicorp/kapitan-reference.git
+      ref: master
+      subdir: components/generators/kubernetes
+      output_path: components/generators/kubernetes
+    compile:
+    - output_path: manifests
+      input_type: kadet
+      output_type: yml
+      input_paths:
+        - components/generators/kubernetes
+    - output_path: docs
+      input_type: kadet
+      output_type: plain
+      input_params:
+        function: generate_docs
+        template_path: templates/docs/service_component.md.j2
+      input_paths:
+        - components/generators/kubernetes
+    - output_path: kind
+      input_type: jinja2
+      input_paths: 
+        - templates/kubernetes
+
+  generators:
+    manifest:
+      default_config:
+        type: deployment
+        service_account:
+          create: false
+        annotations:
+          "manifests.kapicorp.com/generated": "true"

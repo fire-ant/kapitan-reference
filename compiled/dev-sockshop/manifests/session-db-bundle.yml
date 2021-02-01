@@ -6,7 +6,6 @@ metadata:
   labels:
     name: session-db
   name: session-db
-  namespace: dev-sockshop
 spec:
   replicas: 1
   selector:
@@ -47,7 +46,6 @@ metadata:
   labels:
     name: session-db
   name: session-db
-  namespace: dev-sockshop
 spec:
   ports:
     - name: redis

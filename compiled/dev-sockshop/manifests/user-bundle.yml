@@ -6,7 +6,6 @@ metadata:
   labels:
     name: user
   name: user
-  namespace: dev-sockshop
 spec:
   replicas: 1
   selector:
@@ -77,7 +76,6 @@ metadata:
   labels:
     name: user
   name: user
-  namespace: dev-sockshop
 spec:
   ports:
     - name: http

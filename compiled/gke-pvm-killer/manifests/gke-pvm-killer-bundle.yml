@@ -6,7 +6,6 @@ metadata:
   labels:
     name: gke-pvm-killer
   name: gke-pvm-killer
-  namespace: gke-pvm-killer
 spec:
   replicas: 1
   selector:

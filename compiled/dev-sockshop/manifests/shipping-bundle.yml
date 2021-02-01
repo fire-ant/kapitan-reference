@@ -6,7 +6,6 @@ metadata:
   labels:
     name: shipping
   name: shipping
-  namespace: dev-sockshop
 spec:
   replicas: 1
   selector:
@@ -80,7 +79,6 @@ metadata:
   labels:
     name: shipping
   name: shipping
-  namespace: dev-sockshop
 spec:
   ports:
     - name: http

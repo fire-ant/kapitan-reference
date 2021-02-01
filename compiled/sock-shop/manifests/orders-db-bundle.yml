@@ -7,7 +7,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: orders-db
   name: orders-db
-  namespace: sock-shop
 spec:
   replicas: 1
   selector:
@@ -59,7 +58,6 @@ metadata:
     app.kubernetes.io/part-of: sock-shop
     name: orders-db
   name: orders-db
-  namespace: sock-shop
 spec:
   ports:
     - name: mongo
